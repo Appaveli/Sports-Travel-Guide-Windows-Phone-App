@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2509DBE5-65CB-4BAA-B21D-E7536E08B108}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SportsTourGuide</RootNamespace>
+    <AssemblyName>SportsTourGuide</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>SportsTourGuide_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>SportsTourGuide.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <DefaultLanguage>en-US</DefaultLanguage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Texans.xaml.cs">
+      <DependentUpon>Texans.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ravens.xaml.cs">
+      <DependentUpon>Ravens.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panthers.xaml.cs">
+      <DependentUpon>Panthers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Jaguars.xaml.cs">
+      <DependentUpon>Jaguars.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Buccs.xaml.cs">
+      <DependentUpon>Buccs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Seahawks.xaml.cs">
+      <DependentUpon>Seahawks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Bengals.xaml.cs">
+      <DependentUpon>Bengals.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Saints.xaml.cs">
+      <DependentUpon>Saints.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Falcons.xaml.cs">
+      <DependentUpon>Falcons.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dolphins.xaml.cs">
+      <DependentUpon>Dolphins.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vikings.xaml.cs">
+      <DependentUpon>Vikings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Bills.xaml.cs">
+      <DependentUpon>Bills.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chiefs.xaml.cs">
+      <DependentUpon>Chiefs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Jets.xaml.cs">
+      <DependentUpon>Jets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chargers.xaml.cs">
+      <DependentUpon>Chargers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Broncos.xaml.cs">
+      <DependentUpon>Broncos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Titans.xaml.cs">
+      <DependentUpon>Titans.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Patriots.xaml.cs">
+      <DependentUpon>Patriots.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Raiders.xaml.cs">
+      <DependentUpon>Raiders.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cowboys.xaml.cs">
+      <DependentUpon>Cowboys.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Colts.xaml.cs">
+      <DependentUpon>Colts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Browns.xaml.cs">
+      <DependentUpon>Browns.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Niners.xaml.cs">
+      <DependentUpon>Niners.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Rams.xaml.cs">
+      <DependentUpon>Rams.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Eagles.xaml.cs">
+      <DependentUpon>Eagles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Steelers.xaml.cs">
+      <DependentUpon>Steelers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Redskins.xaml.cs">
+      <DependentUpon>Redskins.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lions.xaml.cs">
+      <DependentUpon>Lions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giants.xaml.cs">
+      <DependentUpon>Giants.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Packers.xaml.cs">
+      <DependentUpon>Packers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cardinals.xaml.cs">
+      <DependentUpon>Cardinals.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Bears.xaml.cs">
+      <DependentUpon>Bears.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kings.xaml.cs">
+      <DependentUpon>Kings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lakers.xaml.cs">
+      <DependentUpon>Lakers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Clippers.xaml.cs">
+      <DependentUpon>Clippers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Jazz.xaml.cs">
+      <DependentUpon>Jazz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Blazers.xaml.cs">
+      <DependentUpon>Blazers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mavs.xaml.cs">
+      <DependentUpon>Mavs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Grizzlies.xaml.cs">
+      <DependentUpon>Grizzlies.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pelicans.xaml.cs">
+      <DependentUpon>Pelicans.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Rockets.xaml.cs">
+      <DependentUpon>Rockets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Spurs.xaml.cs">
+      <DependentUpon>Spurs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Suns.xaml.cs">
+      <DependentUpon>Suns.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Thunder.xaml.cs">
+      <DependentUpon>Thunder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Timberwolves.xaml.cs">
+      <DependentUpon>Timberwolves.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Nuggets.xaml.cs">
+      <DependentUpon>Nuggets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Warriors.xaml.cs">
+      <DependentUpon>Warriors.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards.xaml.cs">
+      <DependentUpon>Wizards.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Magic.xaml.cs">
+      <DependentUpon>Magic.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Heat.xaml.cs">
+      <DependentUpon>Heat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hornets.xaml.cs">
+      <DependentUpon>Hornets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hawks.xaml.cs">
+      <DependentUpon>Hawks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Bucks.xaml.cs">
+      <DependentUpon>Bucks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pacers.xaml.cs">
+      <DependentUpon>Pacers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pistons.xaml.cs">
+      <DependentUpon>Pistons.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cavaliers.xaml.cs">
+      <DependentUpon>Cavaliers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Bulls.xaml.cs">
+      <DependentUpon>Bulls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Raptors.xaml.cs">
+      <DependentUpon>Raptors.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sixers.xaml.cs">
+      <DependentUpon>Sixers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Knicks.xaml.cs">
+      <DependentUpon>Knicks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Nets.xaml.cs">
+      <DependentUpon>Nets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Celtics.xaml.cs">
+      <DependentUpon>Celtics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\ItemViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="Texans.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Ravens.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Panthers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Jaguars.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Buccs.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Seahawks.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Bengals.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Saints.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Falcons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dolphins.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Vikings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Bills.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Chiefs.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Jets.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Chargers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Broncos.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Titans.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Patriots.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Raiders.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cowboys.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Colts.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Browns.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Niners.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Rams.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Eagles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Steelers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Redskins.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Lions.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Giants.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Packers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cardinals.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Bears.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Kings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Lakers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Clippers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Jazz.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Blazers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Mavs.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Grizzlies.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pelicans.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Rockets.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Spurs.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Suns.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Thunder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Timberwolves.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Nuggets.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Warriors.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Wizards.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Magic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Heat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Hornets.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Hawks.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Bucks.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pacers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pistons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cavaliers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Bulls.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Raptors.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Sixers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Knicks.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Nets.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Celtics.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <DesignData Include="SampleData\MainViewModelSampleData.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </DesignData>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\BadgeLogo.png" />
+    <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\SplashScreen.png" />
+    <Content Include="Assets\SquareTile150x150.png" />
+    <Content Include="Assets\SquareTile71x71.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\WideLogo.png" />
+    <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileMedium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileMediumLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>
